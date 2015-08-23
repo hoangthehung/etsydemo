@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
+ruby "2.2.1"
+
 gem 'rails', '4.2.0'
-gem 'sqlite3'
+
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -11,7 +13,9 @@ gem 'jbuilder', '~> 2.0'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 gem 'sdoc', '~> 0.4.0', group: :doc
+
 group :development, :test do
+  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -22,3 +26,7 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
