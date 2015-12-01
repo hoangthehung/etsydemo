@@ -1,0 +1,88 @@
+
+<%= render 'layouts/cate_menu' %>
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'carousel' %>
+<% end %>
+<%= javascript_include_tag 'carousel' %>
+
+<h1 ><%= @category.name%></h1>
+<% if (@category.children.count > 3)%>
+<div class="col-md-12">
+<div class="carousel slide" id="myCarousel" >
+  <div class="carousel-inner">
+            <% if (@category.children.first != nil && @category.children.first.listings.first != nil) %>
+            <div class="item active">
+              <div class="col-md-3">
+                  <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="col  center_img"><%= link_to image_tag(@category.children.first.listings.first.image.url, :class => 'img-responsive'), getcate_path(select_cate: @category.children.first.id) %> </div>
+                  </div>
+                  <div class="panel-footer">
+                    <h3><%= link_to @category.children.first.name,getcate_path(select_cate: @category.children.first.id) %></h3>
+                    <h6><%= @category.children.first.listings.count %> sản phẩm</h6>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <% end -%>
+          <%= render((@category.children).drop(1)) %>
+      </div>
+       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+    </div>
+</div>
+<div class="row">
+  <div class="col-md-10"></div>
+  <div class="col-md-2">Sort by </div>
+</div>
+<% end %>
+<div class="row">
+<div class="col-md-2">
+<div class="navbar-center">
+  <ul class="nav nav-pills nav-stacked">
+    <% @category.children.sort_by{|cate| -cate.listings.count}.each do |category| %>
+      <li id="<%= category.id%>">
+      <%= link_to category.name, getcate_path(select_cate: category.id) %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+</div>
+<!--- left menu-->
+
+<div class="col-md-10">
+
+<div class="center">
+<%= paginate @listing_cates %>
+<div class="row">
+<%= render(@listing_cates) %>
+<!--
+  <% @listing_cates.each do |listing| %>
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <%= image_tag listing.image.url(:thumb) %>
+    
+    <div class="caption">
+      <h3><%= listing.name %><br></h3>
+      <p><%= number_to_currency(listing.price) %></p>
+      <p><%= "By #{listing.user.name}" %></p>
+       <%= link_to 'Show', listing, class: "btn btn-link"  %>
+        <% if (user_signed_in?) && (current_user == listing.user) %>
+          <%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link"  %>
+          <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link"  %>
+        <%end%>
+    </div>
+    </div>
+  </div>
+  <% end %>
+-->
+</div>
+
+
+<br>
+<% if (user_signed_in?) %>
+<%= link_to 'New Listing', new_listing_path, class: "btn btn-link"  %>
+<% end %>
+</div>
+</div>
+</div>

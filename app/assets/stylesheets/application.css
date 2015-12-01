@@ -12,4 +12,26 @@
  *
  *= require_tree .
  *= require_self
+ *= require select2
+ *= require select2-bootstrap
+ *= require bootstrap-material-design/dist/css/material
  */
+
+ .listing_margin {
+    border-radius:10px;
+    padding: 10px;
+}
+.img-responsive {
+	max-width: 270px;
+  	max-height: 182px;
+}
+
+.card .card-image img {
+	width: auto;
+	max-height: 100%;
+  	
+}
+.center_img {
+    margin: auto;
+    width: 60%;
+}

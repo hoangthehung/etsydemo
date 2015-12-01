@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @editor_pick.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @editor_pick.image %>
+</p>
+
+<p>
+  <strong>Ontop:</strong>
+  <%= @editor_pick.onTop %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @editor_pick.description %>
+</p>
+
+<%= link_to 'Edit', edit_editor_pick_path(@editor_pick) %> |
+<%= link_to 'Back', editor_picks_path %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>P name:</strong>
+  <%= @keyword.p_name %>
+</p>
+
+<p>
+  <strong>P image:</strong>
+  <%= @keyword.p_image %>
+</p>
+
+<p>
+  <strong>P price:</strong>
+  <%= @keyword.p_price %>
+</p>
+
+<p>
+  <strong>P des:</strong>
+  <%= @keyword.p_des %>
+</p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @keyword.item %>
+</p>
+
+<p>
+  <strong>Item type:</strong>
+  <%= @keyword.item_type %>
+</p>
+
+<p>
+  <strong>Keyword type:</strong>
+  <%= @keyword.keyword_type %>
+</p>
+
+<%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+<%= link_to 'Back', keywords_path %>

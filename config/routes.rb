@@ -1,11 +1,27 @@
 Rails.application.routes.draw do
-  resources :orders
+  resources :shops
 
+  resources :editor_picks
 
+  resources :keywords
 
-  devise_for :users
+  resources :providers
+
+  #resources :shopping_cart_items
+
+  #resources :shopping_carts
+
+  get 'pages/finish_signup'
+
+  resources :links
+
+  #resources :orders
+
+  resources :categories
+
+  
   resources :listings do
-    resources :orders, only: [:new, :create]
+  #resources :orders, only: [:create]
   end
 
   get 'pages/about'
@@ -13,9 +29,20 @@ Rails.application.routes.draw do
   get 'pages/contact'
   root 'listings#index'
 
+  get 'translate_listing' => 'listings#translate_listing'
   get 'seller' => "listings#seller"
   get 'sales' =>  'orders#sales'
   get 'purchases' => 'orders#purchases'
+  get 'getcate' => 'categories#show_listing_by_cate'
+  get 'updatecart' => 'shopping_carts#create'
+  get 'shopping_cart' => 'shopping_carts#show'
+  post 'orders' => 'orders#create'
+  post 'new_listing_order' => 'orders#new'
+  get 'showshop' => 'users#show_shop'
+  devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
+
+  #match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

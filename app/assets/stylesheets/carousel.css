@@ -1,0 +1,23 @@
+.carousel-inner .active.left { left: -25%; }
+.carousel-inner .next        { left:  25%; }
+.carousel-inner .prev		 { left: -25%; }
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,.carousel-control.right {
+	
+	margin-left:0px;
+	background-image:none;
+	background-color: transparent;
+}
+
+.carousel-inner .item .panel .panel-footer {
+	 .h3 {
+	    font-family: "Guardian-EgypTT",serif;
+	    font-weight: 500;
+	    }
+	  .h6 {
+	  	font-family: "Guardian-EgypTT",serif;
+	    font-weight: 500;
+	    font-color : #999
+	  }
+	
+}

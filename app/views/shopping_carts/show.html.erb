@@ -1,0 +1,24 @@
+<h1>Shopping cart</h1>
+<p id="notice"><%= notice %></p>
+<table class="table  table-striped table-bordered">
+          <tr>
+            <th class="center">Image</th>
+            <th class="center">Name</th>
+            <th class="center">Seller</th>
+            <th class="center">Price</th>
+            <th class="center">Num</th>
+  <% @shopping_cart.shopping_cart_items.sort_by{|cart| cart.item.user.name}.each do |cart| %>
+    <tr>
+              <td><%= image_tag cart.item.image.url(:thumb) %></td>
+              <td><%= cart.item.name %></td>
+              <td><%= cart.item.user.name %></td>
+              <td><%= cart.item.price %></td>
+              <td><%= cart.quantity %></td>
+            </tr>
+    </tr>
+  <% end %>
+  <tr>
+    <td colspan="5">
+    <%= link_to "Check out", new_listing_order_path(:carts => @shopping_cart), class: "btn btn-primary", :method=> :post %></td>
+  </tr>
+</table>

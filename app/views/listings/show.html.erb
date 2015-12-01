@@ -13,7 +13,7 @@
   	</div>
   </div>
 <div class="center">
-  <%= link_to "Buy it now", new_listing_order_path(@listing), class: "btn btn-primary" %>
+  <%= link_to "Buy it now", updatecart_path(:listing_id => @listing), class: "btn btn-primary" %>
 </div>
 
 <% if (user_signed_in?) && (current_user == @listing.user) %>

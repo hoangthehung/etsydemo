@@ -1,0 +1,17 @@
+<%= simple_form_for(@keyword) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :p_name %>
+    <%= f.input :p_image %>
+    <%= f.input :p_price %>
+    <%= f.input :p_des %>
+    <%= f.input :item %>
+    <%= f.input :item_type %>
+    <%= f.input :keyword_type %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

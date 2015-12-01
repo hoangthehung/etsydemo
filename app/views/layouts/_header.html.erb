@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -8,22 +8,32 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Etsydemo</a>
+      <!-- <a class="navbar-brand" href="/">Etsydemo</a> -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "About", pages_about_path %></li>
-        <li><%= link_to "Contact", pages_contact_path %></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Cart", shopping_cart_path %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seller Manager</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop của bạn</a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Manage Listing", seller_path %></li>
-              <li><%= link_to "Sale History", sales_path %></li>
+              <li>
+              <%= link_to 'Thêm sản phẩm', new_listing_path %>
+              </li>
+              <li>
+              <%= link_to 'Thêm từ Web', new_link_path %>
+              </li>
+              <li>
+              <%= link_to 'Đơn hàng', sales_path %>
+              </li>
+              <li>
+              <%= link_to 'Sản phẩm', seller_path %>
+              </li>
             </ul>
           </li>
 
@@ -45,4 +55,7 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+
 </nav>
+
+

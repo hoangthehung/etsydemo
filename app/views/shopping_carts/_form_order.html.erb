@@ -1,0 +1,13 @@
+<%= simple_form_for(@shopping_cart) do |f| %>
+  <%= f.error_notification %>
+
+   <td><%= image_tag @cart.item.image.url(:thumb) %></td>
+      <td><%= @cart.item.name %></td>
+      <td><%= @cart.item.price %></td>
+      <td><%= @cart.quantity %></td>
+      <td></td>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

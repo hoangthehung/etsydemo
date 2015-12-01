@@ -1,4 +1,6 @@
 class Listing < ActiveRecord::Base
+	has_and_belongs_to_many :categories
+	has_and_belongs_to_many :editor_picks
 	if Rails.env.development?
 		has_attached_file :image, :styles => { :medium => "200x>", :thumb => "100x100>" }, :default_url => "default_image1.gif"
 	else
@@ -15,5 +17,9 @@ class Listing < ActiveRecord::Base
 	validates_attachment_presence :image
 
 	belongs_to :user
-	has_many :orders
+	belongs_to :link
+	
+
+	default_scope ->{ order('created_at' => :DESC) }
+	#paginates_per 10
 end

@@ -1,0 +1,26 @@
+<div class="col-md-3 listing_margin">
+<div class="card">
+    <div class="card-height-indicator"></div>
+
+    <div class="card-content">
+
+        <div class="card-image">
+            <%= link_to (image_tag(listing.image.url(:thumb))), listing, { :title => listing.description } %>
+        </div>
+
+        <div class="card-body">
+            <%= link_to truncate(listing.name, :length => 50), listing, { :title => listing.description } %>
+            <br>
+            <p>
+            <div class="float-right"><%= number_to_currency(listing.price) %></div>
+            <div class="float-left">
+                <%= link_to listing.user.name, showshop_path(user_id: listing.user.id), { :title => listing.user.name} %>
+                </div>
+            </p>
+        </div>
+        
+        
+
+    </div>
+</div>
+</div>

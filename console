@@ -1,0 +1,597 @@
+Script started on Wed Nov  4 09:20:47 2015
+[?1034hbash-3.2$ rails con[K[Kón[K[Konsole
+Loading development environment (Rails 4.2.0)
+irb(main):001:0> requier[K[Kre 'mechanize'
+LoadError: cannot load such file -- mechanize
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from (irb):1
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:110:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:9:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/GitHub/Etsy/etsydemo/bin/rails:8:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):002:0> 
+irb(main):003:0* 
+irb(main):004:0* 
+irb(main):005:0* 
+irb(main):006:0* 
+irb(main):007:0* quit
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ rails console[C[C[C[C[C[C[C[C[C[C[8Psub .ruby --version[C[C[C[C[C[C[C[C[C[C[9Psub .gem install byebug[C[C[C[C[C[C[C[C[C[C[4Pruby --versionapp/nokogiri.rb [7P--version[C[C[C[C[C[C[C[C[C[Cgem install byebug[C[C[C[C[C[C[C[C[C[Csub .[Kruby --version[C[C[C[C[C[C[C[C[C[C[9Psub .[K[K[K[K[Krails scipr[K[K[Kript/con[K[Kón[K[Konsole
+Error: Command 'script/console' not recognized
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+bash-3.2$ rails con[K[Kón[K[Kốnle[K[K[K[Konsole
+Loading development environment (Rails 4.2.0)
+irb(main):001:0> require 'mechanize'
+LoadError: cannot load such file -- mechanize
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from (irb):1
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:110:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:9:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/GitHub/Etsy/etsydemo/bin/rails:8:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):002:0> require 'nokogiri'
+=> false
+irb(main):003:0> require 'mech^C
+irb(main):003:0> 
+irb(main):004:0* exit
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ sudo gem install mechanize
+Password:
+Successfully installed mechanize-2.7.3
+Parsing documentation for mechanize-2.7.3
+Done installing documentation for mechanize after 1 seconds
+1 gem installed
+bash-3.2$ rails console
+Loading development environment (Rails 4.2.0)
+irb(main):001:0> require 'mechanize'
+LoadError: cannot load such file -- mechanize
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from (irb):1
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:110:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:9:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/GitHub/Etsy/etsydemo/bin/rails:8:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):002:0> d[Krequire 'open-uri'
+=> false
+irb(main):003:0> reuq[K[Kquire 'mechanize'
+LoadError: cannot load such file -- mechanize
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from (irb):3
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:110:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:9:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/GitHub/Etsy/etsydemo/bin/rails:8:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):004:0> bu[K[Kexit
+bash-3.2$ bundle install
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.3
+Using minitest 5.8.0
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 4.2.0
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile 0.6.2
+Using nokogiri 1.6.6.2
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.7
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.2
+Using actionview 4.2.0
+Using rack 1.6.4
+Using rack-test 0.6.3
+Using actionpack 4.2.0
+Using globalid 0.3.6
+Using activejob 4.2.0
+Using mime-types 2.6.1
+Using mail 2.6.3
+Using actionmailer 4.2.0
+Using activemodel 4.2.0
+Using arel 6.0.3
+Using activerecord 4.2.0
+Using execjs 2.6.0
+Using autoprefixer-rails 5.2.1.2
+Using bcrypt 3.1.10
+Using debug_inspector 0.0.2
+Using binding_of_caller 0.7.2
+Using sass 3.4.16
+Using bootstrap-sass 3.3.5.1
+Using byebug 6.0.2
+Using climate_control 0.0.3
+Using cocaine 0.5.7
+Using coffee-script-source 1.9.1.1
+Using coffee-script 2.4.1
+Using thor 0.19.1
+Using railties 4.2.0
+Using coffee-rails 4.1.0
+Using orm_adapter 0.5.0
+Using responders 2.1.0
+Using warden 1.2.3
+Using devise 3.4.1
+Using dropbox-sdk 1.6.4
+Using bundler 1.10.6
+Using sprockets 3.3.2
+Using sprockets-rails 2.3.2
+Using rails 4.2.0
+Using figaro 0.7.0
+Using multi_json 1.11.2
+Using jbuilder 2.3.1
+Using jquery-rails 4.0.4
+Using mimemagic 0.3.0
+Using paperclip 4.3.0 from git://github.com/thoughtbot/paperclip.git (at master)
+Using paperclip-dropbox 1.2.2
+Using pg 0.18.2
+Using rails_serve_static_assets 0.0.2
+Using rails_stdout_logging 0.0.3
+Using rails_12factor 0.0.2
+Using rdoc 4.2.0
+Using tilt 1.4.1
+Using sass-rails 5.0.3
+Using sdoc 0.4.1
+Using spring 1.3.6
+Using sqlite3 1.3.10
+Using turbolinks 2.5.3
+Using uglifier 2.7.1
+Using web-console 2.2.1
+[32mBundle complete! 19 Gemfile dependencies, 71 gems now installed.[0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+bash-3.2$ rake test
+Run options: --seed 40378
+
+# Running:
+
+EEEEEEEEEEEEEEEEE
+
+Finished in 0.188405s, 90.2309 runs/s, 0.0000 assertions/s.
+
+  1) Error:
+ListingsControllerTest#test_should_get_seller:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+ListingsControllerTest#test_should_get_seller:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+  2) Error:
+OrdersControllerTest#test_should_create_order:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+OrdersControllerTest#test_should_create_order:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+  3) Error:
+OrdersControllerTest#test_should_get_new:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+OrdersControllerTest#test_should_get_new:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+  4) Error:
+OrdersControllerTest#test_should_get_edit:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+OrdersControllerTest#test_should_get_edit:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+  5) Error:
+OrdersControllerTest#test_should_show_order:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+OrdersControllerTest#test_should_show_order:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+  6) Error:
+OrdersControllerTest#test_should_destroy_order:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+OrdersControllerTest#test_should_destroy_order:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+  7) Error:
+OrdersControllerTest#test_should_update_order:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+OrdersControllerTest#test_should_update_order:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+  8) Error:
+OrdersControllerTest#test_should_get_index:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+OrdersControllerTest#test_should_get_index:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+  9) Error:
+LinksControllerTest#test_should_update_link:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+LinksControllerTest#test_should_update_link:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+ 10) Error:
+LinksControllerTest#test_should_get_new:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+LinksControllerTest#test_should_get_new:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+ 11) Error:
+LinksControllerTest#test_should_show_link:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+LinksControllerTest#test_should_show_link:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+ 12) Error:
+LinksControllerTest#test_should_create_link:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+LinksControllerTest#test_should_create_link:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+ 13) Error:
+LinksControllerTest#test_should_get_edit:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+LinksControllerTest#test_should_get_edit:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+ 14) Error:
+LinksControllerTest#test_should_get_index:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+LinksControllerTest#test_should_get_index:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+ 15) Error:
+LinksControllerTest#test_should_destroy_link:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+LinksControllerTest#test_should_destroy_link:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+ 16) Error:
+PagesControllerTest#test_should_get_about:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+PagesControllerTest#test_should_get_about:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+
+ 17) Error:
+PagesControllerTest#test_should_get_contact:
+ActiveRecord::StatementInvalid: Could not find table 'users'
+    
+
+Error:
+PagesControllerTest#test_should_get_contact:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+17 runs, 0 assertions, 0 failures, 17 errors, 0 skips
+bash-3.2$ ra
+rackup    racoon    raidutil  rails     rake      ranlib    rarpd     ras2tiff  raw2tiff  
+bash-3.2$ rai
+raidutil  rails     
+bash-3.2$ rails console
+Loading development environment (Rails 4.2.0)
+irb(main):001:0> require 'mechanize'
+LoadError: cannot load such file -- mechanize
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from (irb):1
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:110:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:9:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/GitHub/Etsy/etsydemo/bin/rails:8:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):002:0> exit
+bash-3.2$ require[K[K[K[K[K[K[Krails c
+Loading development environment (Rails 4.2.0)
+irb(main):001:0> require 'mechanize'
+LoadError: cannot load such file -- mechanize
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from (irb):1
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:110:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:9:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/GitHub/Etsy/etsydemo/bin/rails:8:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):002:0> app.root_path
+=> "/"
+irb(main):003:0> exit
+bash-3.2$ rails c
+Loading development environment (Rails 4.2.0)
+irb(main):001:0> require 'rail[K[K[Kubygems'
+=> false
+irb(main):002:0> require 'mechanize'
+LoadError: cannot load such file -- mechanize
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from (irb):2
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:110:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:9:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/GitHub/Etsy/etsydemo/bin/rails:8:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):003:0> exit
+bash-3.2$ gem install hoe rake
+Fetching: hoe-3.14.2.gemFetching: hoe-3.14.2.gem (  9%)Fetching: hoe-3.14.2.gem ( 18%)Fetching: hoe-3.14.2.gem ( 26%)Fetching: hoe-3.14.2.gem ( 35%)Fetching: hoe-3.14.2.gem ( 44%)Fetching: hoe-3.14.2.gem ( 53%)Fetching: hoe-3.14.2.gem ( 61%)Fetching: hoe-3.14.2.gem ( 70%)Fetching: hoe-3.14.2.gem ( 79%)Fetching: hoe-3.14.2.gem ( 88%)Fetching: hoe-3.14.2.gem ( 96%)Fetching: hoe-3.14.2.gem (100%)Fetching: hoe-3.14.2.gem (100%)
+Successfully installed hoe-3.14.2
+Parsing documentation for hoe-3.14.2
+Installing ri documentation for hoe-3.14.2
+Done installing documentation for hoe after 0 seconds
+Fetching: rake-10.4.2.gemFetching: rake-10.4.2.gem ( 12%)Fetching: rake-10.4.2.gem ( 25%)Fetching: rake-10.4.2.gem ( 38%)Fetching: rake-10.4.2.gem ( 50%)Fetching: rake-10.4.2.gem ( 63%)Fetching: rake-10.4.2.gem ( 75%)Fetching: rake-10.4.2.gem ( 88%)Fetching: rake-10.4.2.gem (100%)Fetching: rake-10.4.2.gem (100%)
+Successfully installed rake-10.4.2
+Parsing documentation for rake-10.4.2
+Installing ri documentation for rake-10.4.2
+Done installing documentation for rake after 1 seconds
+2 gems installed
+bash-3.2$ rake newdb
+rake aborted!
+Don't know how to build task 'newdb'
+
+(See full trace by running task with --trace)
+bash-3.2$ rake newb
+rake aborted!
+Don't know how to build task 'newb'
+
+(See full trace by running task with --trace)
+bash-3.2$ rake newb
+rake aborted!
+Don't know how to build task 'newb'
+
+(See full trace by running task with --trace)
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ cd ~/GitHub/Etsy/etsydemo/
+bash-3.2$ ta[K[Krake newb
+rake aborted!
+Don't know how to build task 'newb'
+
+(See full trace by running task with --trace)
+bash-3.2$ rails c
+Loading development environment (Rails 4.2.0)
+irb(main):001:0> require 'mechanize'
+LoadError: cannot load such file -- mechanize
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from (irb):1
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:110:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:9:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/GitHub/Etsy/etsydemo/bin/rails:8:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):002:0> 
+irb(main):003:0* exit
+bash-3.2$ gem install mechanize
+ERROR:  While executing gem ... (Errno::EACCES)
+    Permission denied @ rb_sysopen - /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/mechanize-2.7.3/.autotest
+bash-3.2$ sudo rails c
+Password:
+Loading development environment (Rails 4.2.0)
+irb(main):001:0> requre[K[K[Kuire 'mechanize'
+LoadError: cannot load such file -- mechanize
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from (irb):1
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:110:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/console.rb:9:in `start'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.0/lib/rails/commands.rb:17:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `block in require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:274:in `require'
+	from /Users/hoanghung/GitHub/Etsy/etsydemo/bin/rails:8:in `<top (required)>'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /Users/hoanghung/.rbenv/versions/2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):002:0> 
+irb(main):003:0* 
+irb(main):004:0* exit
+bash-3.2$ 

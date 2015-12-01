@@ -1,0 +1,16 @@
+ <% puts category.listings.count %>
+ <% if (category.listings.count > 0 && category.listings.first != nil) %>
+ <div class="item">
+      <div class="col-md-3">
+      <div class="panel panel-default">
+		  <div class="panel-body">
+		    <div class="col center_img"><%= link_to image_tag(category.listings.first.image.url, :class => 'img-responsive'), getcate_path(select_cate: category.id) %> </div>
+		  </div>
+		  <div class="panel-footer">
+                    <h3><%= link_to category.name,getcate_path(select_cate: category.id) %></h3>
+                    <h6><%= category.listings.count %> sản phẩm</h6>
+          </div>
+		</div>
+      </div>
+    </div>
+<% end %>

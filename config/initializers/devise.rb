@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = '405295651b5aa00727e9afdc06cd20c14b2500f4520f37250e33e417054f855f0a6d1ce12c98ce519abba0765e617a7713ed98fe067b3d0187e744cff35ee4b0'
+  # config.secret_key = 'ef1a657b67cb4cd6deac6a01f776e160626ec3eecaf5d35d8efdcef581ef7d1cdc2a76b5295f81d54321be662b07f4db1d7461dd6e0d486a6dc3f5d477bc56be'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -61,7 +61,7 @@ Devise.setup do |config|
   # :database      = Support basic authentication with authentication key + password
   # config.http_authenticatable = false
 
-  # If http headers should be returned for AJAX requests. True by default.
+  # If 401 status code should be returned for AJAX requests. True by default.
   # config.http_authenticatable_on_xhr = true
 
   # The realm used in Http Basic Authentication. 'Application' by default.
@@ -97,7 +97,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '9d14471096d1f97e5ba4f4af6569ac79f70053c73e2a1220396983717056e5228bf0e7675077e96e0811c8c66fb2b171692c354e337bc12dcae836e0301413dd'
+  # config.pepper = '9ef85526c136e4e05f13d5555f322946870d2bbe1c8f8088af95b410e4e957f135d66dd3f928e82dca459d9de5415884a3526dcd1a2a8d9d704ce91e916d0813'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -179,7 +179,7 @@ Devise.setup do |config|
   # config.unlock_in = 1.hour
 
   # Warn on the last attempt before the account is locked.
-  # config.last_attempt_warning = false
+  # config.last_attempt_warning = true
 
   # ==> Configuration for :recoverable
   #
@@ -256,4 +256,10 @@ Devise.setup do |config|
   # When using omniauth, Devise cannot automatically set Omniauth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
+  
+  #config.omniauth :facebook, "498353047000530", "1b5f49a4ca10e827b6dde816cfa54e5e", {:scope => 'email,user_about_me,manage_pages,publish_actions'}
+  config.omniauth :facebook, "1236927543001101", "8327019523c8cb3a3212727f83c4672c", {:scope => 'email,user_about_me,manage_pages,publish_actions'}
+  
+  config.reconfirmable = false
+  
 end

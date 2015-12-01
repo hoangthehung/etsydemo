@@ -14,8 +14,24 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise', '~> 3.4.0'
-
+gem 'mechanize'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'koala', '~> 2.2'
+gem 'kaminari'
+gem 'easy_translate'
+gem 'simple-navigation'
+gem 'simple-navigation-bootstrap'
+
+
+gem 'simple_form'
+gem 'select2-rails'
+
+gem 'acts_as_shopping_cart', '~> 0.2.1'
+
+gem "bower-rails", "~> 0.10.0"
+
 
 group :development, :test do
   gem 'sqlite3'

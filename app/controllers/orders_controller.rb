@@ -22,9 +22,12 @@ class OrdersController < ApplicationController
 
   # GET /orders/new
   def new
+    puts "got here"
     @order = Order.new
-    @listing = Listing.find(params[:listing_id])
+    @shopping_cart = params[:carts]
   end
+
+  
 
   # GET /orders/1/edit
   def edit
@@ -34,15 +37,17 @@ class OrdersController < ApplicationController
   # POST /orders.json
   def create
     @order = Order.new(order_params)
-    @listing = Listing.find(params[:listing_id])
-    @seller = @listing.user
+    shopping_cart = ShoppingCart.find(params[:carts])
+
+    
 
     @order.buyer_id = current_user.id
-    @order.listing_id = @listing.id
-    @order.seller_id = @seller.id
+    @order.shopping_cart = shopping_cart
+    @order.seller_id = shopping_cart.shopping_cart_items.first.item.user.id
 
     respond_to do |format|
       if @order.save
+        create_new_shopping_cart
         format.html { redirect_to root_url  , notice: 'Order was successfully created.' }
         format.json { render :show, status: :created, location: @order }
       else
@@ -63,5 +68,12 @@ class OrdersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
       params.require(:order).permit(:address, :city, :state)
+    end
+    def remove_item_cart
+
+    end
+    def create_new_shopping_cart
+      @shopping_cart = ShoppingCart.create
+      session[:shopping_cart_id] = @shopping_cart.id
     end
 end
